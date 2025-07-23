@@ -1,19 +1,61 @@
-# NgxAnLoader
+## Usage
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+To use the `ngx-an-loader` component in your Angular application, follow these steps:
 
-## Code scaffolding
+### Step 1: Import the Component
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Add the `ngx-an-loader` component to your application template where you want the loader to appear. For example, in your `app.component.html`:
 
-```bash
-ng generate component component-name
+```html
+<ngx-an-loader></ngx-an-loader>
+<p>app works</p>
+<button (click)="toggleLoader()">Toggle loader</button>
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Step 2: Include the Service
 
-```bash
-ng generate --help
+To control the visibility of the loader, you need to use the `NgxAnLoaderService`. Inject this service into your component and use it to toggle the loader's visibility.
+
+#### Example in `app.component.ts`:
+
+```typescript
+import { Component } from "@angular/core";
+import { NgxAnLoaderService } from "ngx-an-loader";
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+})
+export class AppComponent {
+  constructor(private ngxAnLoaderService: NgxAnLoaderService) {}
+
+  show() {
+    this.ngxAnLoaderService.show(); // turn on
+  }
+  hide() {
+    this.ngxAnLoaderService.hide(); // turn off
+  }
+}
+```
+
+### Step 3: Add the Service to Your Module
+
+Ensure that the `NgxAnLoaderService` is provided in your module. This is typically done in the `app.module.ts`:
+
+```typescript
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+import { NgxAnLoaderModule } from "ngx-an-loader";
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxAnLoaderModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 ```
 
 ## Building
@@ -31,6 +73,7 @@ This command will compile your project, and the build artifacts will be placed i
 Once the project is built, you can publish your library by following these steps:
 
 1. Navigate to the `dist` directory:
+
    ```bash
    cd dist/ngx-an-loader
    ```

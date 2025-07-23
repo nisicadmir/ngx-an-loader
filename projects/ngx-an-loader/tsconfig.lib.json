@@ -8,6 +8,9 @@
     "sourceMap": true,
     "types": []
   },
+  "angularCompilerOptions": {
+    "compilationMode": "partial"
+  },
   "include": ["src/**/*.ts"],
   "exclude": ["**/*.spec.ts"]
 }

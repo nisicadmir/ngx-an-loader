@@ -5,14 +5,14 @@ import { Injectable, signal } from "@angular/core";
 })
 export class NgxAnLoaderService {
   public isVisible = signal(false);
-  show() {
+  show(): void {
     this.isVisible.set(true);
   }
-  hide() {
+  hide(): void {
     this.isVisible.set(false);
   }
 
-  toggle() {
+  toggle(): void {
     this.isVisible.set(!this.isVisible());
   }
 }
