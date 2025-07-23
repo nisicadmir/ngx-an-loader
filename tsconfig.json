@@ -8,7 +8,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "ngx-an-loader": ["./dist/ngx-an-loader"]
+      "ngx-an-loader-local": ["./dist/ngx-an-loader"]
     },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
