@@ -1,11 +1,10 @@
 import { Component, signal } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
 
 import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader";
 
 @Component({
   selector: "app-root",
-  imports: [RouterOutlet, NgxAnLoader],
+  imports: [NgxAnLoader],
   templateUrl: "./app.html",
   styleUrl: "./app.scss",
 })
