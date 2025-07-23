@@ -1,5 +1,7 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, effect } from "@angular/core";
+
+import { NgxAnLoaderService } from "../ngx-an-loader.service";
 
 @Component({
   selector: "ngx-an-loader",
@@ -8,6 +10,12 @@ import { Component } from "@angular/core";
   styleUrl: "./loader.css",
   standalone: true,
 })
-export class Loader {
+export class NgxAnLoader {
   public isVisible = false;
+
+  constructor(private ngxAnLoaderService: NgxAnLoaderService) {
+    effect(() => {
+      this.isVisible = this.ngxAnLoaderService.isVisible();
+    });
+  }
 }

@@ -8,9 +8,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "ngx-an-loader": [
-        "./dist/ngx-an-loader"
-      ]
+      "ngx-an-loader": ["./dist/ngx-an-loader"]
     },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -40,6 +38,12 @@
     },
     {
       "path": "./projects/demo-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/app/tsconfig.spec.json"
     }
   ]
 }
