@@ -1,12 +1,30 @@
 {
   "name": "ngx-an-loader",
-  "version": "1.0.1",
+  "version": "20.0.4",
   "peerDependencies": {
     "@angular/common": "^20.1.0",
     "@angular/core": "^20.1.0"
   },
+  "author": "nisicadmir",
+  "description": "awesome ngx loader",
+  "keywords": [
+    "ng2-loader",
+    "ngx-loader",
+    "ng2",
+    "angular-loader",
+    "loader",
+    "angular",
+    "angular2",
+    "angular2-loader",
+    "ng2loader"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "homepage": "https://github.com/nisicadmir/ngx-an-loader",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/nisicadmir/ngx-an-loader.git"
   },
   "sideEffects": false
 }

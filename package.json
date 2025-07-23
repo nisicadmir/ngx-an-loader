@@ -9,7 +9,7 @@
     "test": "ng test",
     "build:loader": "ng build ngx-an-loader --configuration development",
     "build:loader:prod": "ng build ngx-an-loader --configuration production",
-    "publish": "npm publish dist/ngx-an-loader --access public"
+    "publish": "npm publish dist/ngx-an-loader"
   },
   "prettier": {
     "overrides": [
