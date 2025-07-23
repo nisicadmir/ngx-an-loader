@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, effect } from "@angular/core";
+import { Component, effect, Input } from "@angular/core";
 
 import { NgxAnLoaderService } from "../ngx-an-loader.service";
 
@@ -11,6 +11,9 @@ import { NgxAnLoaderService } from "../ngx-an-loader.service";
   standalone: true,
 })
 export class NgxAnLoader {
+  @Input()
+  zIndex: number = 10_000;
+
   public isVisible = false;
 
   constructor(private ngxAnLoaderService: NgxAnLoaderService) {
