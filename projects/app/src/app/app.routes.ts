@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { AppLocal } from "./app-local/app-local";
 import { AppProd } from "./app-prod/app-prod";
+import { App } from "./app";
 
 export const routes: Routes = [
   {
@@ -12,5 +13,5 @@ export const routes: Routes = [
     component: AppProd,
   },
 
-  { path: "**", redirectTo: "app-local" },
+  { path: "**", redirectTo: "app-prod" },
 ];

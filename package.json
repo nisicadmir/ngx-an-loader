@@ -11,7 +11,8 @@
     "build:app:prod": "ng build app --configuration production",
     "build:loader": "ng build ngx-an-loader --configuration development",
     "build:loader:prod": "ng build ngx-an-loader --configuration production",
-    "publish": "npm publish dist/ngx-an-loader"
+    "publish": "cd ./dist/ngx-an-loader && npm publish",
+    "build_publish": "npm run build:loader && npm run publish"
   },
   "prettier": {
     "overrides": [
@@ -31,7 +32,7 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
-    "ngx-an-loader": "^1.0.2",
+    "ngx-an-loader": "^20.0.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

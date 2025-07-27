@@ -49,6 +49,39 @@ export class AppComponent {
 }
 ```
 
+## Style change
+
+If you want to update the style of the loader.
+
+```css
+.ngx-an-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ngx-an-loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #3f51b5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+```
+
 ## Import parameters:
 
 - zIndex - default 10_000.
