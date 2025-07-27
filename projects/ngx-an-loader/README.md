@@ -1,5 +1,9 @@
 # Installation
 
+# Live demo deployed on Vercel.com
+
+[ngx-an-loader Documentation](https://ngx-an-loader.vercel.app/)
+
 ```
 npm install --save ngx-an-loader
 ```
