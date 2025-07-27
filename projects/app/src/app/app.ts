@@ -1,8 +1,8 @@
 import { Component, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 
-import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader-local";
-// import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader";
+// import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader-local";
+import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader";
 
 @Component({
   selector: "app-root",

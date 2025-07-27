@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:app": "ng build app --configuration development",
+    "build:app:prod": "ng build app --configuration production",
     "build:loader": "ng build ngx-an-loader --configuration development",
     "build:loader:prod": "ng build ngx-an-loader --configuration production",
     "publish": "npm publish dist/ngx-an-loader"
