@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { NgxAnLoader } from "./loader";
+import { NgxLoader } from "./loader";
 
 describe("Loader", () => {
-  let component: NgxAnLoader;
-  let fixture: ComponentFixture<NgxAnLoader>;
+  let component: NgxLoader;
+  let fixture: ComponentFixture<NgxLoader>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgxAnLoader],
+      imports: [NgxLoader],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NgxAnLoader);
+    fixture = TestBed.createComponent(NgxLoader);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

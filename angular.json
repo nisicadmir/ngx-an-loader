@@ -3,20 +3,20 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-an-loader": {
+    "ngx-loader": {
       "projectType": "library",
-      "root": "projects/ngx-an-loader",
-      "sourceRoot": "projects/ngx-an-loader/src",
+      "root": "projects/ngx-loader",
+      "sourceRoot": "projects/ngx-loader/src",
       "prefix": "an",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-an-loader/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-loader/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-an-loader/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-loader/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -24,7 +24,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/ngx-an-loader/tsconfig.spec.json"
+            "tsConfig": "projects/ngx-loader/tsconfig.spec.json"
           }
         }
       }

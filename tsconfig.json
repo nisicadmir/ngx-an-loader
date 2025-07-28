@@ -8,7 +8,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "ngx-an-loader-local": ["./dist/ngx-an-loader"]
+      "ngx-loader-local": ["./dist/ngx-loader"]
     },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -28,10 +28,10 @@
   "files": [],
   "references": [
     {
-      "path": "./projects/ngx-an-loader/tsconfig.lib.json"
+      "path": "./projects/ngx-loader/tsconfig.lib.json"
     },
     {
-      "path": "./projects/ngx-an-loader/tsconfig.spec.json"
+      "path": "./projects/ngx-loader/tsconfig.spec.json"
     },
     {
       "path": "./projects/demo-app/tsconfig.app.json"

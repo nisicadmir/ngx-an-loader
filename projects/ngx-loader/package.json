@@ -1,9 +1,12 @@
 {
-  "name": "ngx-an-loader",
-  "version": "20.0.8",
+  "name": "@nisix/ngx-loader",
+  "version": "20.0.10",
   "peerDependencies": {
     "@angular/common": "^20.1.0",
     "@angular/core": "^20.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "nisicadmir",
   "description": "awesome ngx loader",
@@ -21,10 +24,10 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "homepage": "https://github.com/nisicadmir/ngx-an-loader",
+  "homepage": "https://github.com/nisicadmir/ngx-loader",
   "repository": {
     "type": "git",
-    "url": "git@github.com/nisicadmir/ngx-an-loader.git"
+    "url": "git@github.com/nisicadmir/ngx-loader.git"
   },
   "sideEffects": false
 }

@@ -1,19 +1,18 @@
 import { Component, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 
-// import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader-local";
-import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader";
+import { NgxLoader, NgxLoaderService } from "@nisix/ngx-loader";
 
 @Component({
   selector: "app-root",
-  imports: [NgxAnLoader, RouterModule],
+  imports: [NgxLoader, RouterModule],
   templateUrl: "./app.html",
   styleUrl: "./app.scss",
 })
 export class App {
   protected readonly title = signal("app");
 
-  constructor(private loaderService: NgxAnLoaderService) {}
+  constructor(private loaderService: NgxLoaderService) {}
 
   toggleLoader() {
     this.loaderService.show();

@@ -2,10 +2,10 @@
 
 # Live demo deployed on Vercel.com
 
-[ngx-an-loader Documentation](https://ngx-an-loader.vercel.app/)
+[@nisix/ngx-loader Live app](https://ngx-loader.vercel.app/)
 
 ```
-npm install --save ngx-an-loader
+npm install --save @nisix/ngx-loader
 ```
 
 # Version Compatibility
@@ -14,41 +14,41 @@ Loader is compatible with Angular 20 and newer
 
 ## Usage
 
-To use the `ngx-an-loader` component in your Angular application, follow these steps:
+To use the `@nisix/ngx-loader` component in your Angular application, follow these steps:
 
 ### Step 1: Import the Component
 
-Add the `ngx-an-loader` component to your application template where you want the loader to appear. For example, in your `app.component.html`:
+Add the `ngx-loader` component to your application template where you want the loader to appear. For example, in your `app.component.html`:
 
 ```html
-<ngx-an-loader></ngx-an-loader>
+<ngx-loader></ngx-loader>
 <button (click)="toggleLoader()">Toggle loader</button>
 ```
 
 ### Step 2: Include the Service
 
-To control the visibility of the loader, you need to use the `NgxAnLoaderService`. Inject this service into your component and use it to toggle the loader's visibility.
+To control the visibility of the loader, you need to use the `ngxLoaderService`. Inject this service into your component and use it to toggle the loader's visibility.
 
 #### Example in `app.component.ts`:
 
 ```typescript
 import { Component } from "@angular/core";
-import { NgxAnLoaderService, NgxAnLoader } from "ngx-an-loader";
+import { ngxLoaderService, NgxLoader } from "@nisix/ngx-loader";
 
 @Component({
   selector: "app-root",
-  import: [NgxAnLoader], // <- import component
+  import: [NgxLoader], // <- import component
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  constructor(private ngxAnLoaderService: NgxAnLoaderService) {} // <- use service
+  constructor(private ngxLoaderService: NgxLoaderService) {} // <- use service
 
   show() {
-    this.ngxAnLoaderService.show(); // turn on
+    this.ngxLoaderService.show(); // turn on
   }
   hide() {
-    this.ngxAnLoaderService.hide(); // turn off
+    this.ngxLoaderService.hide(); // turn off
   }
 }
 ```
@@ -58,7 +58,7 @@ export class AppComponent {
 If you want to update the style of the loader.
 
 ```css
-.ngx-an-loader-overlay {
+.ngx-loader-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ If you want to update the style of the loader.
   align-items: center;
 }
 
-.ngx-an-loader {
+.ngx-loader {
   width: 50px;
   height: 50px;
   border: 6px solid #ccc;
@@ -91,5 +91,5 @@ If you want to update the style of the loader.
 - zIndex - default 10_000.
 
 ```
-<ngx-an-loader [zIndex]="1000"></ngx-an-loader>
+<ngx-loader [zIndex]="1000"></ngx-loader>
 ```

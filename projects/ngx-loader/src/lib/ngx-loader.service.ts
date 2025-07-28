@@ -3,7 +3,7 @@ import { Injectable, signal } from "@angular/core";
 @Injectable({
   providedIn: "root",
 })
-export class NgxAnLoaderService {
+export class NgxLoaderService {
   public isVisible = signal(false);
   show(): void {
     this.isVisible.set(true);

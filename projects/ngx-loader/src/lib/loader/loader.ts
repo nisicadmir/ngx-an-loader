@@ -1,24 +1,24 @@
 import { CommonModule } from "@angular/common";
 import { Component, effect, Input } from "@angular/core";
 
-import { NgxAnLoaderService } from "../ngx-an-loader.service";
+import { NgxLoaderService } from "../ngx-loader.service";
 
 @Component({
-  selector: "ngx-an-loader",
+  selector: "ngx-loader",
   imports: [CommonModule],
   templateUrl: "./loader.html",
   styleUrl: "./loader.css",
   standalone: true,
 })
-export class NgxAnLoader {
+export class NgxLoader {
   @Input()
   zIndex: number = 10_000;
 
   public isVisible = false;
 
-  constructor(private ngxAnLoaderService: NgxAnLoaderService) {
+  constructor(private ngxLoaderService: NgxLoaderService) {
     effect(() => {
-      this.isVisible = this.ngxAnLoaderService.isVisible();
+      this.isVisible = this.ngxLoaderService.isVisible();
     });
   }
 }

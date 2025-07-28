@@ -1,5 +1,5 @@
 {
-  "name": "ngx-an-loader-workspace",
+  "name": "@nisix/ngx-loader-workspace",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,9 +9,9 @@
     "test": "ng test",
     "build:app": "ng build app --configuration development",
     "build:app:prod": "ng build app --configuration production",
-    "build:loader": "ng build ngx-an-loader --configuration development",
-    "build:loader:prod": "ng build ngx-an-loader --configuration production",
-    "publish": "cd ./dist/ngx-an-loader && npm publish",
+    "build:loader": "ng build ngx-loader --configuration development",
+    "build:loader:prod": "ng build ngx-loader --configuration production",
+    "publish": "cd ./dist/ngx-loader && npm publish",
     "build_publish": "npm run build:loader && npm run publish"
   },
   "prettier": {
@@ -32,7 +32,9 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
-    "ngx-an-loader": "^20.0.5",
+    "@nisix/express-error-handler": "^1.0.0",
+    "@nisix/ngx-loader": "^20.0.9",
+    "ngx-an-loader": "^20.0.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

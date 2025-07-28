@@ -1,24 +1,24 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 
-import { NgxAnLoader, NgxAnLoaderService } from "ngx-an-loader";
+import { NgxLoader, NgxLoaderService } from "@nisix/ngx-loader";
 
 @Component({
   selector: "app-app-prod",
-  imports: [NgxAnLoader],
+  imports: [NgxLoader],
   templateUrl: "./app-prod.html",
   styleUrl: "./app-prod.scss",
 })
 export class AppProd {
   constructor(
-    private ngxAnLoaderService: NgxAnLoaderService,
+    private ngxLoaderService: NgxLoaderService,
     private router: Router
   ) {}
   public startLoader() {
-    this.ngxAnLoaderService.show();
+    this.ngxLoaderService.show();
 
     setTimeout(() => {
-      this.ngxAnLoaderService.hide();
+      this.ngxLoaderService.hide();
     }, 3_000);
   }
 

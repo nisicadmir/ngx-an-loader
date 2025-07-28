@@ -1,4 +1,4 @@
-.ngx-an-loader-overlay {
+.ngx-loader-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.ngx-an-loader {
+.ngx-loader {
   width: 50px;
   height: 50px;
   border: 6px solid #ccc;
