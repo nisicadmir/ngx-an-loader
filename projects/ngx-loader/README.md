@@ -1,8 +1,8 @@
-# Installation
-
 # Live demo deployed on Vercel.com
 
 [@nisix/ngx-loader Live app](https://ngx-loader.vercel.app/)
+
+# Installation
 
 ```
 npm install --save @nisix/ngx-loader
@@ -27,13 +27,13 @@ Add the `ngx-loader` component to your application template where you want the l
 
 ### Step 2: Include the Service
 
-To control the visibility of the loader, you need to use the `NgxLoaderService`. Inject this service into your component and use it to toggle the loader's visibility.
+To control the visibility of the loader, you need to use the `ngxLoaderService`. Inject this service into your component and use it to toggle the loader's visibility.
 
 #### Example in `app.component.ts`:
 
 ```typescript
 import { Component } from "@angular/core";
-import { NgxLoaderService, NgxLoader } from "@nisix/ngx-loader";
+import { ngxLoaderService, NgxLoader } from "@nisix/ngx-loader";
 
 @Component({
   selector: "app-root",
@@ -42,13 +42,13 @@ import { NgxLoaderService, NgxLoader } from "@nisix/ngx-loader";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  constructor(private NgxLoaderService: NgxLoaderService) {} // <- use service
+  constructor(private ngxLoaderService: NgxLoaderService) {} // <- use service
 
   show() {
-    this.NgxLoaderService.show(); // turn on
+    this.ngxLoaderService.show(); // turn on
   }
   hide() {
-    this.NgxLoaderService.hide(); // turn off
+    this.ngxLoaderService.hide(); // turn off
   }
 }
 ```

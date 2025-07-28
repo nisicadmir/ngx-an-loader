@@ -1,8 +1,8 @@
-# Installation
-
 # Live demo deployed on Vercel.com
 
 [@nisix/ngx-loader Live app](https://ngx-loader.vercel.app/)
+
+# Installation
 
 ```
 npm install --save @nisix/ngx-loader
